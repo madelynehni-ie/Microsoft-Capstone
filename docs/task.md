@@ -1,0 +1,12 @@
+- `[x]` Reconstruct `ted_exploratory_etl.py`
+  - `[x]` Write imports and schema fields
+  - `[x]` Reconstruct CLI argument parsing and logging
+  - `[x]` Reconstruct package range expansion and local archive mapping
+  - `[x]` Reconstruct resilient download package logic with mock fallback
+  - `[x]` Reconstruct archive extraction and XML parsing
+  - `[x]` Complete daily aggregation and gold outputs generation
+- `[x]` Verify changes
+  - `[x]` Check syntax and compile Python code
+  - `[x]` Run local end-to-end pipeline check
+  - `[x]` Check generated CSV files in Silver and Gold layers
+- `[x]` Create Walkthrough

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(py \"Exploratory ETL/ted_exploratory_etl.py\" --packages 2026-04 --max-files 3 --data-dir data_test --log-level DEBUG)",
+      "Bash(py *)"
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-05-31T20:00:59.059805+00:00",
+  "package_ids": [
+    "2026-04"
+  ],
+  "counts": {
+    "parsed_xml_files": 10,
+    "notices": 10,
+    "organizations": 10,
+    "lots": 10,
+    "cpv_rows": 37,
+    "skipped_by_filters": 0,
+    "parse_errors": 0
+  },
+  "top_notice_types": {
+    "cn-standard-16": 7,
+    "can-standard-29": 2,
+    "cn-standard-17": 1
+  },
+  "top_countries": {
+    "POL": 3,
+    "FRA": 2,
+    "LVA": 1,
+    "ITA": 1,
+    "DEU": 1,
+    "NOR": 1,
+    "IRL": 1
+  },
+  "top_cpv_divisions": {
+    "42": 10,
+    "45": 6,
+    "33": 5,
+    "72": 4,
+    "43": 2,
+    "79": 2,
+    "90": 2,
+    "09": 2,
+    "71": 2,
+    "38": 2
+  },
+  "notice_missingness": {
+    "notice_id": 0.0,
+    "publication_date": 0.0,
+    "notice_type": 0.0,
+    "country_codes": 0.0,
+    "buyer_name": 0.0,
+    "winner_name": 0.0,
+    "total_award_amount": 0.6,
+    "award_currency": 0.6
+  },
+  "parse_errors": []
+}

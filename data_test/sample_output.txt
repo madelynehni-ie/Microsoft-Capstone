@@ -1,0 +1,89 @@
+=== notices.csv ===
+{'notice_id': '00293529_2026', 'publication_date': '2026-04-27', 'notice_type': 'cn-standard-17', 'country_codes': 'FRA', 'buyer_name': 'SPL Cherbourg Port', 'winner_name': 'UNKNOWN', 'total_award_amount': '700000.0', 'award_currency': 'EUR'}
+{'notice_id': '00292299_2026', 'publication_date': '2026-04-28', 'notice_type': 'cn-standard-16', 'country_codes': 'POL', 'buyer_name': 'Mazowieckie Centrum Polityki Społecznej', 'winner_name': 'UNKNOWN', 'total_award_amount': '572334.0', 'award_currency': 'PLN'}
+{'notice_id': '00295434_2026', 'publication_date': '2026-04-24', 'notice_type': 'can-standard-29', 'country_codes': 'LVA', 'buyer_name': 'Dabas aizsardzības pārvalde', 'winner_name': 'UNKNOWN', 'total_award_amount': '', 'award_currency': ''}
+{'notice_id': '00294725_2026', 'publication_date': '2026-04-27', 'notice_type': 'cn-standard-16', 'country_codes': 'FRA', 'buyer_name': 'Conseil Départemental de la Mayenne', 'winner_name': 'UNKNOWN', 'total_award_amount': '', 'award_currency': ''}
+{'notice_id': '00293495_2026', 'publication_date': '2026-04-27', 'notice_type': 'cn-standard-16', 'country_codes': 'ITA', 'buyer_name': 'Autoservizi Cerella Srl', 'winner_name': 'UNKNOWN', 'total_award_amount': '749842.6', 'award_currency': 'EUR'}
+{'notice_id': '00294691_2026', 'publication_date': '2026-04-20', 'notice_type': 'can-standard-29', 'country_codes': 'DEU', 'buyer_name': 'Krankenhaus Rummelsberg GmbH', 'winner_name': 'UNKNOWN', 'total_award_amount': '', 'award_currency': ''}
+{'notice_id': '00292786_2026', 'publication_date': '2026-04-28', 'notice_type': 'cn-standard-16', 'country_codes': 'POL', 'buyer_name': 'Powiatowy Szpital im. Władysława Biegańskiego w Iławie', 'winner_name': 'UNKNOWN', 'total_award_amount': '', 'award_currency': ''}
+{'notice_id': '00292630_2026', 'publication_date': '2026-04-28', 'notice_type': 'cn-standard-16', 'country_codes': 'POL', 'buyer_name': 'SKARB PAŃSTWA-ŚWIĘTOKRZYSKI URZĄD WOJEWÓDZKI', 'winner_name': 'UNKNOWN', 'total_award_amount': '', 'award_currency': ''}
+{'notice_id': '00291921_2026', 'publication_date': '2026-04-27', 'notice_type': 'cn-standard-16', 'country_codes': 'NOR', 'buyer_name': 'SYKEHUSINNKJØP HF', 'winner_name': 'UNKNOWN', 'total_award_amount': '', 'award_currency': ''}
+{'notice_id': '00293467_2026', 'publication_date': '2026-04-27', 'notice_type': 'cn-standard-16', 'country_codes': 'IRL', 'buyer_name': 'Enviro Grind Ltd', 'winner_name': 'UNKNOWN', 'total_award_amount': '1000000.0', 'award_currency': 'EUR'}
+
+=== organizations.csv ===
+{'notice_id': '00293529_2026', 'org_id': 'ORG-0002', 'name': 'SPL Cherbourg Port', 'role': 'BUYER', 'country': 'FRA', 'town': 'Cherbourg en Cotentin'}
+{'notice_id': '00292299_2026', 'org_id': 'ORG-0002', 'name': 'Mazowieckie Centrum Polityki Społecznej', 'role': 'BUYER', 'country': 'POL', 'town': 'Warszawa'}
+{'notice_id': '00295434_2026', 'org_id': 'ORG-0001', 'name': 'Dabas aizsardzības pārvalde', 'role': 'BUYER', 'country': 'LVA', 'town': 'Sigulda'}
+{'notice_id': '00294725_2026', 'org_id': 'ORG-0002', 'name': 'Conseil Départemental de la Mayenne', 'role': 'BUYER', 'country': 'FRA', 'town': 'Laval'}
+{'notice_id': '00293495_2026', 'org_id': 'ORG-0001', 'name': 'Autoservizi Cerella Srl', 'role': 'BUYER', 'country': 'ITA', 'town': 'Vasto'}
+{'notice_id': '00294691_2026', 'org_id': 'ORG-0004', 'name': 'Krankenhaus Rummelsberg GmbH', 'role': 'BUYER', 'country': 'DEU', 'town': 'Schwarzenbruck'}
+{'notice_id': '00292786_2026', 'org_id': 'ORG-0001', 'name': 'Powiatowy Szpital im. Władysława Biegańskiego w Iławie', 'role': 'BUYER', 'country': 'POL', 'town': 'IŁAWA'}
+{'notice_id': '00292630_2026', 'org_id': 'ORG-0001', 'name': 'SKARB PAŃSTWA-ŚWIĘTOKRZYSKI URZĄD WOJEWÓDZKI', 'role': 'BUYER', 'country': 'POL', 'town': 'KIELCE'}
+{'notice_id': '00291921_2026', 'org_id': 'ORG-0001', 'name': 'SYKEHUSINNKJØP HF', 'role': 'BUYER', 'country': 'NOR', 'town': 'Vadsø'}
+{'notice_id': '00293467_2026', 'org_id': 'ORG-0001', 'name': 'Enviro Grind Ltd', 'role': 'BUYER', 'country': 'IRL', 'town': 'Pettigo'}
+
+=== lots.csv ===
+{'notice_id': '00293529_2026', 'lot_id': 'LOT-0000', 'title': 'Accord-Cadre à bon de commande location de matériels de terrassement, chargement et transport; SANS CHAUFFEUR', 'lot_amount': '700000', 'lot_currency': 'EUR'}
+{'notice_id': '00292299_2026', 'lot_id': 'LOT-0001', 'title': 'Cena', 'lot_amount': '572334', 'lot_currency': 'PLN'}
+{'notice_id': '00295434_2026', 'lot_id': 'LOT-0002', 'title': 'Saimnieciski izdevīgākais piedāvājums', 'lot_amount': '', 'lot_currency': ''}
+{'notice_id': '00294725_2026', 'lot_id': 'LOT-0000', 'title': "Maintenance des outils d'infrastructure pour le système de stockage centralisé NetApp et prestations associées", 'lot_amount': '', 'lot_currency': ''}
+{'notice_id': '00293495_2026', 'lot_id': 'LOT-0001', 'title': 'Bando di gara Europea mediante procedura aperta per la fornitura di gasolio per autotrazione per Autoservizi Cerella Srl', 'lot_amount': '749842.60', 'lot_currency': 'EUR'}
+{'notice_id': '00294691_2026', 'lot_id': 'LOT-0000', 'title': 'Fassadenarbeiten, Faserzementfassade', 'lot_amount': '', 'lot_currency': ''}
+{'notice_id': '00292786_2026', 'lot_id': 'LOT-0001', 'title': 'Cena brutto', 'lot_amount': '', 'lot_currency': ''}
+{'notice_id': '00292630_2026', 'lot_id': 'LOT-0001', 'title': 'Cena oferty brutto', 'lot_amount': '', 'lot_currency': ''}
+{'notice_id': '00291921_2026', 'lot_id': 'LOT-0001', 'title': 'buyer-categories', 'lot_amount': '', 'lot_currency': ''}
+{'notice_id': '00293467_2026', 'lot_id': 'LOT-0001', 'title': 'Supply of an Integrated Dosing, Mixing and Packaging System for Growing Media Production including design, installation, commissioning and training', 'lot_amount': '1000000', 'lot_currency': 'EUR'}
+
+=== profile ===
+{
+  "generated_at": "2026-05-31T20:00:59.059805+00:00",
+  "package_ids": [
+    "2026-04"
+  ],
+  "counts": {
+    "parsed_xml_files": 10,
+    "notices": 10,
+    "organizations": 10,
+    "lots": 10,
+    "cpv_rows": 37,
+    "skipped_by_filters": 0,
+    "parse_errors": 0
+  },
+  "top_notice_types": {
+    "cn-standard-16": 7,
+    "can-standard-29": 2,
+    "cn-standard-17": 1
+  },
+  "top_countries": {
+    "POL": 3,
+    "FRA": 2,
+    "LVA": 1,
+    "ITA": 1,
+    "DEU": 1,
+    "NOR": 1,
+    "IRL": 1
+  },
+  "top_cpv_divisions": {
+    "42": 10,
+    "45": 6,
+    "33": 5,
+    "72": 4,
+    "43": 2,
+    "79": 2,
+    "90": 2,
+    "09": 2,
+    "71": 2,
+    "38": 2
+  },
+  "notice_missingness": {
+    "notice_id": 0.0,
+    "publication_date": 0.0,
+    "notice_type": 0.0,
+    "country_codes": 0.0,
+    "buyer_name": 0.0,
+    "winner_name": 0.0,
+    "total_award_amount": 0.6,
+    "award_currency": 0.6
+  },
+  "parse_errors": []
+}

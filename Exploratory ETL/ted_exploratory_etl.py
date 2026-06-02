@@ -1,3 +1,4 @@
+from __future__ import annotations
 import argparse
 import csv
 import io
@@ -180,6 +181,18 @@ def _strip_ns(root: ET.Element) -> None:
 def _text(el: ET.Element | None) -> str:
     return el.text.strip() if el is not None and el.text else ""
 
+def _find_org_id(parent: ET.Element) -> str:
+    org_id = _text(parent.find(".//ID[@schemeName='organization']"))
+    if org_id:
+        return org_id
+    return _text(parent.find(".//ID"))
+
+
+def _find_country(company: ET.Element) -> str:
+    country = _text(company.find(".//IdentificationCode[@listName='country']"))
+    if country:
+        return country.upper()
+    return _text(company.find(".//Country//IdentificationCode")).upper()
 
 def parse_eforms_xml(
     filename: str,
@@ -222,22 +235,19 @@ def parse_eforms_xml(
             if company is None:
                 continue
             # ID with schemeName="organization" is the canonical org ref
-            id_el = company.find(".//ID[@schemeName='organization']")
-            if id_el is None:
-                id_el = company.find(".//ID")
-            org_id = _text(id_el)
+            org_id = _find_org_id(company)
             if not org_id:
                 continue
             org_lookup[org_id] = {
                 "name": _text(company.find(".//Name")),
                 "city": _text(company.find(".//CityName")),
-                "country": _text(company.find(".//IdentificationCode")),
+                "country": _find_country(company),
             }
 
         # Buyers: ContractingParty references an org by ID
         buyer_org_ids: list[str] = []
         for cp in root.findall(".//ContractingParty"):
-            oid = _text(cp.find(".//ID"))
+            oid = _find_org_id(wp)
             if oid:
                 buyer_org_ids.append(oid)
 

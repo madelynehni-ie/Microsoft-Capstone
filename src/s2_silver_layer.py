@@ -279,7 +279,10 @@ def normalize_org_name(name: str) -> str:
     text = "".join(ch for ch in text if not unicodedata.combining(ch))
     text = re.sub(r"\bs\.?\s*a\.?\b", " sa ", text)
     text = re.sub(r"\bs\.?\s*l\.?\b", " sl ", text)
-    text = re.sub(r"[^a-z0-9\s]", " ", text)
+    text = "".join(
+        ch if ch.isspace() or unicodedata.category(ch)[0] in {"L", "N"} else " "
+        for ch in text
+    )
     text = re.sub(r"\s+", " ", text).strip()
     tokens = [token for token in text.split() if token not in LEGAL_SUFFIXES]
     return " ".join(tokens)

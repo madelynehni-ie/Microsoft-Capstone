@@ -82,6 +82,48 @@ python3 "Exploratory ETL/ted_exploratory_etl.py" --packages 2026-05 --max-files 
 
 ---
 
+## S2 Silver Layer: Cleaning, Entity Resolution & Semantic Tags
+
+S2 owns the Silver cleaning, buyer entity resolution, semantic tagging, and data-quality reporting layer for the Procurement Intelligence System. This layer builds on the exploratory TED ETL outputs and prepares business-ready buyer-level data for later Gold feature engineering and ML modelling.
+
+Run the exploratory ETL first:
+
+```bash
+python3 "Exploratory ETL/ted_exploratory_etl.py" --packages 2026-05 --max-files 10
+```
+
+Then run the S2 Silver Layer workflow:
+
+```bash
+python3 src/s2_silver_layer.py \
+  --input-dir data/silver \
+  --output-dir data/silver \
+  --reports-dir data/reports \
+  --fuzzy-threshold 90
+```
+
+For a lightweight end-to-end run:
+
+```bash
+bash scripts/run_s2_pipeline.sh
+```
+
+The S2 workflow generates:
+
+- `data/silver/notices_clean.csv`
+- `data/silver/organizations_clean.csv`
+- `data/silver/buyer_master.csv`
+- `data/silver/buyer_notice_map.csv`
+- `data/silver/procurement_semantic_layer.csv`
+- `data/reports/s2_data_quality_report.md`
+- `data/reports/s2_data_quality_metrics.json`
+
+S3/S4 should use `buyer_master.csv` as the canonical resolved buyer table and `procurement_semantic_layer.csv` as the notice-level Microsoft relevance signal for Gold feature engineering and ML modelling. `buyer_notice_map.csv` links resolved buyers back to source notices.
+
+Generated `data/` outputs may be ignored by Git. They can be recreated at any time by running the ETL and S2 pipeline commands above.
+
+---
+
 ## Program
 Master in Business Analytics & Data Science (MBDS)  
 IE University — Class of 2026

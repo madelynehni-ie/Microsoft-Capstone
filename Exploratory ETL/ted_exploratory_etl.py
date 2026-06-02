@@ -247,7 +247,7 @@ def parse_eforms_xml(
         # Buyers: ContractingParty references an org by ID
         buyer_org_ids: list[str] = []
         for cp in root.findall(".//ContractingParty"):
-            oid = _find_org_id(wp)
+            oid = _find_org_id(cp)
             if oid:
                 buyer_org_ids.append(oid)
 
